@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
-<h1>'Articles List'</h1>
-{% for i in articles %}
-<a href="#"> {{i.slug}}</a>
-<p>{{ i.snip }}</p>
-<p>{{ i.data }}</p>
-{% endfor %}
+<div class="container">
+    <h1>'Articles List'</h1>
+    {% for i in articles %}
+    <a href="#"> {{i.slug}}</a>
+    <p>{{ i.snip }}</p>
+    <p>{{ i.data }}</p>
+    {% endfor %}
+<div>
 </body>
 </html>
